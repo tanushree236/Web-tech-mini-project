@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <title>Eventsia</title>
+    <style>
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        /* Navigation bar: Logo and Image */
+        #logo {
+            margin: 10px 15px;
+
+        }
+
+        /* Navigation bar: Logo and Image */
+        #logo {
+            margin: 10px 15px;
+
+        }
+
+        #logo img {
+            /* margin: 3px 5px; */
+            height: 45px;
+        }
+
+        /* Navigation bar: List styling */
+        #navbar ul {
+            display: flex;
+        }
+
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            /*block because we have to give padding*/
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: 'Work Sans';
+            font-size: 22px;
+            font-style: normal;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+        }
+
+        /* Right navebar */
+        #rightLogin {
+            position: absolute;
+            right: 150px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        #rightRegister {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        /* Home Section */
+        #home {
+
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 425px;
+        }
+
+        #home::before {
+            content: "";
+            background: url('bg.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home h1 {
+            color: black;
+            text-align: center;
+            font-family: 'Work Sans';
+            font-size: 54px;
+        }
+        #home p {
+            color: black;
+            text-align: center;
+            font-size: 34px;
+            font-family: 'Work Sans';
+            font-weight: bolder;
+        }
+        /* Courses Section */
+        #courses {
+            /* margin: 34px; */
+            /* margin: 10px; */
+            display: flex;
+
+
+        }
+
+        #courses .box {
+            
+            padding: 34px;
+            margin: 200px 6px 1px 6px;
+           
+
+        }
+
+        #courses .box img {
+            height: 200px;
+            display: block;
+            margin: auto;
+            /*works when display is block*/
+
+        }
+
+        #courses .box p{
+            font-family: 'Work Sans';
+         }
+         #courses1 {
+            /* margin: 34px; */
+            /* margin: 10px; */
+            display: flex;
+
+
+        }
+
+        #courses1 .box {
+            
+            padding: 34px;
+            margin: 3px 6px;
+           
+
+        }
+
+        #courses1 .box img {
+            height: 200px;
+            display: block;
+            margin: auto;
+            /*works when display is block*/
+
+        }
+
+        #courses1 .box p{
+            font-family: 'Work Sans';
+         }
+         #courses2 {
+            /* margin: 34px; */
+            /* margin: 10px; */
+            display: flex;
+
+
+        }
+
+        #courses2 .box {
+            
+            padding: 34px;
+            margin: 3px 6px;
+           
+
+        }
+
+        #courses2 .box img {
+            height: 200px;
+            display: block;
+            margin: auto;
+            /*works when display is block*/
+
+        }
+
+        #courses2 .box p{
+            font-family: 'Work Sans';
+         }
+         /* Contact us */
+         #contact{
+         position: relative;
+         }
+         #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('contactus.jpg') no-repeat center center/cover;
+
+            
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        
+        .form-group{
+            font-family: 'Work Sans';
+            font-size: 24px;
+            padding: 12px;
+
+        }
+        /* Footer */
+        footer{
+            background-color: black;
+            color: white;
+            padding: 9px 20px;
+        }
+
+         .h-primary {
+            font-family: 'Work Sans';
+            font-size: 40px;
+            padding: 12px;
+
+        }
+        .center {
+            text-align: center;
+            font-family: 'Work Sans';
+        }
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: red;
+            color: white;
+            margin: 17px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: plum;
+            color: black;
+            margin: 17px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="event.png" alt="Eventsia.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#courses-container">Events</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+            <li class="item" id="rightLogin"><a href="login.html" target="_blank">Login</a></li>
+            <li class="item" id="rightRegister"><a href="register.html" target="_blank">Register</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">
+            Welcome to Eventsia
+        </h1>
+        <p>Let's explore</p>
+    </section>
+    <section id="courses-container">
+        <div id="courses">
+            <div class="box">
+                <img src="fest1.jpg" alt="">
+                <h2 class="h-secondary center">Echoes of Earth Music Festival</h2>
+                <p class="center">Location:Embassy International Riding School,Bangalore</p>
+                <p class="center">Time:Sat, 12 Dec, 6:30 pm</p>
+                 <button class="btn">Book Ticket</button>
+            </div>
+            <div class="box">
+                <img src="fest2.jpg" alt="">
+                <h2 class="h-secondary center">SMF MUSIC FESTIVAL</h2>
+                <p class="center">Location:Bangalore,Karnataka</p>
+                <p class="center">Time:Sat, 10 Dec, 11 am – Sun, 11 Dec, 10 pm</p>
+                 <button class="btn">Book Ticket</button>
+            </div>
+            <div class="box">
+                <img src="fest3.jpg" alt="">
+                <h2 class="h-secondary center">Krank Sessions XMAS Eve featuring NILS HOFFMANN Live at Gyl</h2>
+                <p class="center">Location:Bangalore,Karnataka
+                </p>
+                <p class="center">Sat, 24 Dec, 8 pm – Sun, 25 Dec, 1 am</p>
+                <button class="btn">Book Ticket</button>
+
+            </div>
+            
+
+        </div>
+        <div id="courses1">
+            <div class="box">
+                <img src="fest1.jpg" alt="">
+                <h2 class="h-secondary center">Echoes of Earth Music Festival</h2>
+                <p class="center">Location:Embassy International Riding School,Bangalore</p>
+                <p class="center">Time:Sat, 12 Dec, 6:30 pm</p>
+                 <button class="btn">Book Ticket</button>
+            </div>
+            <div class="box">
+                <img src="fest2.jpg" alt="">
+                <h2 class="h-secondary center">SMF MUSIC FESTIVAL</h2>
+                <p class="center">Location:Bangalore,Karnataka</p>
+                <p class="center">Time:Sat, 10 Dec, 11 am – Sun, 11 Dec, 10 pm</p>
+                 <button class="btn">Book Ticket</button>
+            </div>
+            <div class="box">
+                <img src="fest3.jpg" alt="">
+                <h2 class="h-secondary center">Krank Sessions XMAS Eve featuring NILS HOFFMANN Live at Gyl</h2>
+                <p class="center">Location:Bangalore,Karnataka
+                </p>
+                <p class="center">Sat, 24 Dec, 8 pm – Sun, 25 Dec, 1 am</p>
+                <button class="btn">Book Ticket</button>
+
+            </div>
+            
+
+        </div>
+        <div id="courses2">
+            <div class="box">
+                <img src="fest1.jpg" alt="">
+                <h2 class="h-secondary center">Echoes of Earth Music Festival</h2>
+                <p class="center">Location:Embassy International Riding School,Bangalore</p>
+                <p class="center">Time:Sat, 12 Dec, 6:30 pm</p>
+                 <button class="btn">Book Ticket</button>
+            </div>
+            <div class="box">
+                <img src="fest2.jpg" alt="">
+                <h2 class="h-secondary center">SMF MUSIC FESTIVAL</h2>
+                <p class="center">Location:Bangalore,Karnataka</p>
+                <p class="center">Time:Sat, 10 Dec, 11 am – Sun, 11 Dec, 10 pm</p>
+                 <button class="btn">Book Ticket</button>
+            </div>
+            <div class="box">
+                <img src="fest3.jpg" alt="">
+                <h2 class="h-secondary center">Krank Sessions XMAS Eve featuring NILS HOFFMANN Live at Gyl</h2>
+                <p class="center">Location:Bangalore,Karnataka
+                </p>
+                <p class="center">Sat, 24 Dec, 8 pm – Sun, 25 Dec, 1 am</p>
+                <button class="btn">Book Ticket</button>
+
+            </div>
+            
+
+        </div>
+
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+                <table class="form-group" cellpadding="20px">
+                    <tr>
+                        <td>
+                            Instagram:_eventsia_
+
+                        </td>
+                        <td>
+                            Facebook:eventsia
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone no:9876543210
+
+                        </td>
+                        <td>
+                            Email:eventsiaservice@gmail.com
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Eventsia.com. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

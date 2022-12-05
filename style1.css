@@ -1,0 +1,45 @@
+    body{
+        background:url("https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662__340.jpg");
+        background-size:80%;
+        background-position:-200px opx;
+    }
+    div.main{
+    width:400px;
+    margin:100px auto 0px auto;
+    }
+    h2{
+    text-align:center;
+    padding:10px;
+    font-family:sans-serif;
+    }
+    div.register{
+    background-color:rgba(0,0,0,0,0,0,0.5);
+    width:100%;
+    font-size:18px;
+    border-radius:10px;
+    border:1px soid rgba(255,255,255,255,255,255,0.3);
+    box-shadow:2px 2px 15px 2px 2px 3px
+    rgba(0,0,0,0,0,0,0.3);
+    color:#fff;
+    }
+    form#register{
+    margin:40px;
+    }
+    input[type=text], input[type=password] {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    }
+    .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+    }
