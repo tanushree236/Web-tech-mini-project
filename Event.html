@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
-    <title>Eventsia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Party Maniacs</title>
     <style>
         #navbar {
             display: flex;
@@ -44,7 +46,7 @@
 
         #logo img {
             /* margin: 3px 5px; */
-            height: 45px;
+            height: 55px;
         }
 
         /* Navigation bar: List styling */
@@ -117,28 +119,32 @@
         #home h1 {
             color: black;
             text-align: center;
-            font-family: 'Work Sans';
+            font-family: 'Diplomata SC', cursive;
             font-size: 54px;
         }
 
-        #home p {
+        #homep {
             color: black;
             text-align: center;
-            font-size: 34px;
-            font-family: 'Work Sans';
+            font-size: 30px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: bolder;
+        }
+        .homeH2{
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Nunito Sans', sans-serif;
             font-weight: bolder;
         }
 
-        /* Courses Section */
-        #courses {
+        /* Fetss Section */
+        #fests {
             /* margin: 34px; */
             /* margin: 10px; */
-            display: flex;
-
-
-        }
-
-        #courses .box {
+            display: flex;}
+            
+        #fests .box {
 
             padding: 34px;
             margin: 200px 6px 1px 6px;
@@ -146,7 +152,7 @@
 
         }
 
-        #courses .box img {
+        #fests .box img {
             height: 200px;
             display: block;
             margin: auto;
@@ -154,11 +160,11 @@
 
         }
 
-        #courses .box p {
-            font-family: 'Work Sans';
+        #fests .box p {
+            font-family: 'Playfair Display', serif;
         }
 
-        #courses1 {
+        #fests1 {
             /* margin: 34px; */
             /* margin: 10px; */
             display: flex;
@@ -166,7 +172,7 @@
 
         }
 
-        #courses1 .box {
+        #fests1 .box {
 
             padding: 34px;
             margin: 3px 6px;
@@ -174,7 +180,7 @@
 
         }
 
-        #courses1 .box img {
+        #fests1 .box img {
             height: 200px;
             display: block;
             margin: auto;
@@ -182,11 +188,11 @@
 
         }
 
-        #courses1 .box p {
-            font-family: 'Work Sans';
+        #fests1 .box p {
+            font-family: 'Playfair Display', serif;
         }
 
-        #courses2 {
+        #fests2 {
             /* margin: 34px; */
             /* margin: 10px; */
             display: flex;
@@ -194,7 +200,7 @@
 
         }
 
-        #courses2 .box {
+        #fests2 .box {
 
             padding: 34px;
             margin: 3px 6px;
@@ -202,7 +208,7 @@
 
         }
 
-        #courses2 .box img {
+        #fests2 .box img {
             height: 200px;
             display: block;
             margin: auto;
@@ -210,8 +216,8 @@
 
         }
 
-        #courses2 .box p {
-            font-family: 'Work Sans';
+        #fests2 .box p {
+            font-family: 'Playfair Display', serif;
         }
 
         /* Contact us */
@@ -239,9 +245,10 @@
         }
 
         .form-group {
-            font-family: 'Work Sans';
+            font-family: 'Playfair Display', serif;
             font-size: 24px;
             padding: 12px;
+            
 
         }
 
@@ -253,7 +260,7 @@
         }
 
         .h-primary {
-            font-family: 'Work Sans';
+            font-family: 'Playfair Display', serif;
             font-size: 40px;
             padding: 12px;
 
@@ -261,10 +268,10 @@
 
         .center {
             text-align: center;
-            font-family: 'Work Sans';
+            font-family: 'Playfair Display', serif;
         }
 
-        
+
 
         a:link {
             text-decoration: none;
@@ -296,6 +303,7 @@
             cursor: pointer;
 
         }
+
         .btn:hover {
             padding: 6px 20px;
             border: 2px solid white;
@@ -312,38 +320,40 @@
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="event.png" alt="Eventsia.com">
+            <img src="event web logo.webp" alt="Eventsia.com">
         </div>
         <ul>
             <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#courses-container">Events</a></li>
+            <li class="item"><a href="#fests-container">Events</a></li>
             <li class="item"><a href="#contact">Contact Us</a></li>
             <li class="item" id="rightLogin"><a href="login.html" target="_blank">Login</a></li>
             <li class="item" id="rightRegister"><a href="register.html" target="_blank">Register</a></li>
         </ul>
     </nav>
     <section id="home">
-        <h1 class="h-primary">
-            Welcome to Eventsia
+        <h1 class="h-primary" id="HomeH1">
+            Welcome Party Maniacs
         </h1>
-        <p>Let's explore</p>
+        <h2 class="homeH2">Intoxicating Souls with Party's</h2>
+        <h2 class="homeH2">Meet new people with new experience</h2>
+        <p id="homep">Let's Explore</p>
     </section>
-    <section id="courses-container">
-        <div id="courses">
+    <section id="fests-container">
+        <div id="fests">
             <div class="box">
-                <img src="festb1.jpg" alt="">
-                <h2 class="h-secondary center">Effervescence 22</h2>
-<button class="btn"><a href="booking.html" target="_blank">Book Ticket</a></button>
+                <img src="fest1.jpg" alt="">
+                <h2 class="h-secondary center">Saarang, IIT Madras</h2>
+                <button class="btn"><a href="booking.html" target="_blank">Book Ticket</a></button>
             </div>
             <div class="box">
                 <img src="fest2.jpg" alt="">
-                <h2 class="h-secondary center">SMF MUSIC FESTIVAL</h2>
+                <h2 class="h-secondary center">OASIS, BITS Pilani</h2>
 
                 <button class="btn"><a href="booking2.html" target="_blank">Book Ticket</a></button>
             </div>
             <div class="box">
                 <img src="fest3.jpg" alt="">
-                <h2 class="h-secondary center">SSE PHRONESIS 2022</h2>
+                <h2 class="h-secondary center">INCIDENT, NIT K</h2>
 
                 <button class="btn"><a href="booking3.html" target="_blank">Book Ticket</a></button>
 
@@ -351,11 +361,10 @@
 
 
         </div>
-        <div id="courses1">
+        <div id="fests1">
             <div class="box">
                 <img src="fest4.jpg" alt="">
-                <h2 class="h-secondary center">BLOSSOMS
-                    2022 - Inter-Deanery Cultural Fest</h2>
+                <h2 class="h-secondary center">Riviera, Vellore Institute of technology</h2>
 
                 <button class="btn"><a href="booking4.html" target="_blank">Book Ticket</a></button>
             </div>
@@ -367,7 +376,7 @@
             </div>
             <div class="box">
                 <img src="fest6.jpg" alt="">
-                <h2 class="h-secondary center">Rendezvous IIT Delhi</h2>
+                <h2 class="h-secondary center">Unmaad, IIM Bangalore</h2>
 
                 <button class="btn"><a href="booking6.html" target="_blank">Book Ticket</a></button>
 
@@ -375,22 +384,22 @@
 
 
         </div>
-        <div id="courses2">
+        <div id="fests2">
             <div class="box">
                 <img src="fest7.jpg" alt="">
-                <h2 class="h-secondary center">Waves BITS Goa</h2>
+                <h2 class="h-secondary center">Waves, BITS Goa</h2>
 
                 <button class="btn"><a href="booking7.html" target="_blank">Book Ticket</a></button>
             </div>
             <div class="box">
-                <img src="fest8.png" alt="">
-                <h2 class="h-secondary center">Thomso IIT Roorkee 2022</h2>
+                <img src="fest8.jpg" alt="">
+                <h2 class="h-secondary center">Malhar, St. Xavier’s</h2>
 
                 <button class="btn"><a href="booking8.html" target="_blank">Book Ticket</a></button>
             </div>
             <div class="box">
                 <img src="fest9.jpg" alt="">
-                <h2 class="h-secondary center">Antarangi IIT Kanpur</h2>
+                <h2 class="h-secondary center">RENDEZVOUS, IIT Delhi</h2>
                 <button class="btn"><a href="booking9.html" target="_blank">Book Ticket</a></button>
 
             </div>
@@ -405,11 +414,11 @@
             <table class="form-group" cellpadding="20px">
                 <tr>
                     <td>
-                        Instagram:_eventsia_
+                        Instagram: _.party.maniacs._
 
                     </td>
                     <td>
-                        Facebook:eventsia
+                        Facebook: Party Maniacs
 
                     </td>
                 </tr>
@@ -419,7 +428,7 @@
 
                     </td>
                     <td>
-                        Email:eventsiaservice@gmail.com
+                        Email: partymaniacs@gmail.com
                     </td>
                 </tr>
             </table>
