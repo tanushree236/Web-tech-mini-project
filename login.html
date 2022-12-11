@@ -28,7 +28,7 @@
         }
 
         body {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Inconsolata', monospace;
             font-size: 24px;
             font-weight: bold;
             margin: 100px;
@@ -60,6 +60,8 @@
             font-size: 14px;
             border-radius: 5px;
             cursor: pointer;
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
         }
 
         .loginbtn:hover {
@@ -71,6 +73,10 @@
             font-size: 18px;
             border-radius: 5px;
             cursor: pointer;
+        }
+
+        #register:hover {
+            color: red;
         }
     </style>
 </head>
@@ -92,7 +98,7 @@
                 <button type="button" class="loginbtn">Forgot Password</button>
                 <button type="button" class="loginbtn">Login</button>
                 <div class="register_link">
-                    Not a member?<a href="register.html">Register</a>
+                    Not a member?<a href="register.html" id="register"> Register</a>
                 </div>
     </center>
 </body>
