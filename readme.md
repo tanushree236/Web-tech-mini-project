@@ -18,4 +18,4 @@ There is a contact us page which information to contact us through Instagram, Fa
 The website is a user-friendly website, anyone of any age group can access the website.
 
 NOTE : The project contains only HTML and CSS code for UI of the website.
-     : It is a learning based project for web development.
+      It is a learning based project for web development.
