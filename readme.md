@@ -7,7 +7,7 @@ The prerequisites for this mini project are as follows:
 2.	A functioning laptop or computer
 3.	Stable Internet 
 
-Project Module 
+Project Module -
 The website is an Online website. 
 The website contains a register page for the user who do not have an account in the website. It contains register credentials like First Name, Last Name, College Name, Email and create password. 
 It also has a login page for user who have an account in the website. It contains login credentials like username and password. 
